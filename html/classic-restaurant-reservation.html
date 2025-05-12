@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Magenta's Bakery</title>    
+        <!-- Plugins CSS -->
+        <link href="css/plugins/plugins.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css"  href="smart-form/booking/css/smart-forms.css">
+        <link href="css/style-restaurant.css" rel="stylesheet">
+    </head>
+
+    <body style="background-image: url('images/resto/slide2.png'); background-color: #fff;  background-size: cover; background-position: center; min-height: 100vh;">
+
+        <div id="preloader">
+            <div id="preloader-inner"></div>
+        </div><!--/preloader-->
+
+
+        <div class="reservation-card mb70">
+            <div class="smart-forms">
+                <div class="text-center">
+                  <a href="classic-onepage-restaurant.html"><img class="logo logo-light hidden-md-down" src="images/resto/LogoM.png" alt="Logo" width="100" height="100"></a>
+
+                    <h4 class="mb30">Haz tu pedido aquí</h4><hr>
+                </div>
+           <form method="post" action="smart-form/booking/php/smartprocess.php" id="smart-form">
+    <div class="form-body">
+
+        <div class="section">
+            <label for="nombre" class="field-label">Nombre Completo</label>
+            <label class="field prepend-icon">
+                <input type="text" name="nombre" id="nombre" class="gui-input" placeholder="Tu nombre...">
+                <span class="field-icon"><i class="fa fa-user"></i></span>  
+            </label>
+        </div>
+
+        <div class="frm-row">
+            <div class="section colm colm6">
+                <label for="correo" class="field-label">Correo Electrónico</label>
+                <label class="field prepend-icon">
+                    <input type="email" name="correo" id="correo" class="gui-input" placeholder="Correo electrónico">
+                    <span class="field-icon"><i class="fa fa-envelope"></i></span>  
+                </label>
+            </div>
+
+            <div class="section colm colm6">
+                <label for="telefono" class="field-label">Teléfono</label>
+                <label class="field prepend-icon">
+                    <input type="tel" name="telefono" id="telefono" class="gui-input" placeholder="Teléfono">
+                    <span class="field-icon"><i class="fa fa-phone-square"></i></span>  
+                </label>
+            </div>
+        </div>
+
+        <!-- Nuevo campo: Categoría -->
+        <div class="section">
+            <label for="categoria" class="field-label">Categorías</label>
+            <label class="field select">
+                <select id="categoria" name="categoria">
+                    <option value="">Selecciona una categoría</option>
+                    <option value="cheesecake">Cheesecakes</option>
+                    <option value="tortas">Tortas</option>
+                    <option value="panqueques">Panqueques</option>
+                    <option value="tartaleta">Tartaletas</option>
+                </select>
+                <i class="arrow double"></i>
+            </label>
+        </div>
+
+        <!-- Nuevo campo: Cantidad -->
+        <div class="section">
+            <label for="cantidad" class="field-label">Cantidad</label>
+            <label class="field prepend-icon">
+                <input type="number" name="cantidad" id="cantidad" class="gui-input" placeholder="Cantidad" min="1" value="1">
+                <span class="field-icon"><i class="fa fa-sort-numeric-asc"></i></span>
+            </label>
+        </div>
+
+        <div class="section">
+            <label for="pedido" class="field-label">Detalle del Pedido</label>
+            <label class="field prepend-icon">
+                <textarea class="gui-textarea" id="pedido" name="pedido" placeholder="Ej: 2 Tortas, 1 bebida..."></textarea>
+                <span class="field-icon"><i class="fa fa-cutlery"></i></span>
+                <span class="input-hint"> 
+                    <strong>Nota:</strong> Indica con claridad lo que deseas pedir
+                </span>   
+            </label>
+        </div>
+
+        <div class="section">
+            <label for="comentario" class="field-label">Comentarios o Instrucciones</label>
+            <label class="field prepend-icon">
+                <textarea class="gui-textarea" id="comentario" name="comentario" placeholder="Comentarios adicionales (opcional)"></textarea>
+                <span class="field-icon"><i class="fa fa-comments"></i></span>
+            </label>
+        </div>
+        <div class="result"></div>
+    </div>
+    <div class="form-bottom">
+        <button type="submit" data-btntext-sending="Enviando..." class="btn btn-primary">Hacer Pedido</button>
+        <button type="reset" class="btn btn-light">Cancelar</button>
+    </div>
+</form>
+
+            </div><!-- end .smart-wrap section -->
+            <div class="text-center">
+                <span>
+                    
+                </span>
+            </div>
+        </div>
+        
+        <footer class='footer pt90 pb40 bg-white'>
+            <div class='container text-center'>
+                <div class='row'>
+                    <div class='col-lg-6'>
+                        <a href='classic-onepage-restaurant.html' data-scroll class='h6'> 
+                            <img src='images/resto/logoM2.png' alt='' width="200" height="200" class='logo2'>
+                        </a>
+                    </div>
+                    <div class='col-lg-6'>
+                        <span class='clearfix'>
+                            <a href="#" class="social-icon-sm si-dark si-dark-round si-facebook">
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon-sm si-dark si-dark-round si-twitter ">
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon-sm si-dark si-dark-round si-instagram">
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon-sm si-dark si-dark-round si-linkedin">
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-linkedin"></i>
+                            </a>  
+                        </span>
+                    </div>
+                </div>
+                <div class='pt30'>
+                    &copy; Magenta's Bakery 2018. Todos los derechos reservados. 
+                </div>
+            </div>
+        </footer>
+        <!--back to top  -->
+        <a href="#" class="back-to-top" id="back-to-top"><i class="ti-angle-up"></i></a>
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="js/plugins/plugins.js"></script> 
+        <script src="js/restaurant.custom.js"></script>
+        <script type="text/javascript" src="smart-form/booking/js/jquery-ui-custom.min.js"></script>
+        <script type="text/javascript" src="smart-form/booking/js/jquery.maskedinput.js"></script>
+        <script type="text/javascript" src="smart-form/booking/js/jquery.form.min.js"></script>
+        <script type="text/javascript" src="smart-form/booking/js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="smart-form/booking/js/additional-methods.min.js"></script>
+        <script type="text/javascript" src="smart-form/booking/js/smart-form.js"></script>
+    </body>
+</html>
